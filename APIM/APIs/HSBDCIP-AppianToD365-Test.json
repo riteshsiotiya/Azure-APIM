@@ -1,0 +1,888 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "HSB-DCIP-AppianToD365-Test",
+        "description": "",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://hsbapidev.azure-api.net/AToDTest"
+        }
+    ],
+    "paths": {
+        "/CrmToAppinUpdate/UpdateWBSOnStatusChange": {
+            "post": {
+                "summary": "Update WBS On Status Change",
+                "description": "Update WBS On Status Change",
+                "operationId": "update-wbs-on-status-change",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/CrmToAppinUpdate/AccountChange": {
+            "post": {
+                "summary": "Account Change",
+                "description": "Account Change",
+                "operationId": "account-change",
+                "parameters": [
+                    {
+                        "name": "isLoggerTrue",
+                        "in": "query",
+                        "schema": {
+                            "enum": [
+                                "false",
+                                "true"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Logger/log": {
+            "post": {
+                "summary": "Log",
+                "description": "Log",
+                "operationId": "log",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/CustomProject/IntegrationStatus": {
+            "patch": {
+                "summary": "Integration Status",
+                "description": "Integration Status",
+                "operationId": "integration-status",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "isLoggerTrue",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Trigger/InitiationProcess": {
+            "post": {
+                "summary": "Trigger Initiation Process",
+                "description": "Trigger Initiation Process",
+                "operationId": "trigger-initiation-process",
+                "parameters": [
+                    {
+                        "name": "isLoggerTrue",
+                        "in": "query",
+                        "schema": {
+                            "enum": [
+                                "false",
+                                "true"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Trigger/IMProcess": {
+            "post": {
+                "summary": "Trigger Implementation Process",
+                "description": "Trigger Implementation Process",
+                "operationId": "trigger-implementation-process",
+                "parameters": [
+                    {
+                        "name": "isLoggerTrue",
+                        "in": "query",
+                        "schema": {
+                            "enum": [
+                                "false",
+                                "true"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Trigger/NewPhase": {
+            "post": {
+                "summary": "Trigger New Phase",
+                "description": "Trigger New Phase",
+                "operationId": "Trigger-New-Phase",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Trigger/AddTasksIM": {
+            "post": {
+                "summary": "Add Tasks in IM",
+                "description": "Add Tasks in IM",
+                "operationId": "add-tasks-in-im",
+                "parameters": [
+                    {
+                        "name": "isLoggerTrue",
+                        "in": "query",
+                        "schema": {
+                            "enum": [
+                                "false",
+                                "true"
+                            ],
+                            "type": "string",
+                            "default": "false"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Logger/LogProjectJson": {
+            "post": {
+                "summary": "Log CRM Project Json",
+                "description": "Log CRM Project Json",
+                "operationId": "log-crm-project-json",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Trigger/IMInitiationValid": {
+            "post": {
+                "summary": "IMInitiationValid",
+                "description": "IMInitiationValid",
+                "operationId": "iminitiationvalid",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/BindingAuthority/UpdateApprover": {
+            "post": {
+                "summary": "BindingAuthority",
+                "description": "BindingAuthority",
+                "operationId": "bindingauthority",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/ReviewCoverageApprover/UpdateApprover": {
+            "post": {
+                "summary": "ReviewCoverageApprover",
+                "description": "ReviewCoverageApprover",
+                "operationId": "reviewcoverageapprover",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/Tasks/UpdateTask": {
+            "post": {
+                "summary": "UpdateD365Tasks",
+                "description": "UpdateD365Tasks",
+                "operationId": "updated365tasks",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/NotesUpdate/Notes": {
+            "post": {
+                "summary": "UpdateD365Notes",
+                "description": "UpdateD365Notes",
+                "operationId": "UpdateD365Notes",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/HolidaysList/GetList": {
+            "get": {
+                "summary": "Get Holiday List",
+                "description": "Get Holiday List",
+                "operationId": "Get-Holiday-List",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/CrmToAppinUpdate/PricingStatusUpdate": {
+            "post": {
+                "summary": "Pricing Status Update",
+                "description": "Pricing Status Update",
+                "operationId": "Pricing-Status-Update",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/CrmToAppinUpdate/WbsDateUpdate": {
+            "post": {
+                "summary": "WBS Date Update",
+                "description": "WBS Date Update",
+                "operationId": "wbs-date-update",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/CrmToAppinUpdate/UpdateStandaloneTask": {
+            "post": {
+                "summary": "Update Stand Alone Task",
+                "description": "Update Stand Alone Task",
+                "operationId": "update-stand-alone-task",
+                "parameters": [
+                    {
+                        "name": "content-type",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/clientproductquoteline/createorder": {
+            "post": {
+                "summary": "Client Product Quote line",
+                "description": "Client Product Quote line",
+                "operationId": "Client-Product-Quote-line",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/Trigger/StartImplementation": {
+            "post": {
+                "summary": "Start Implementation Process",
+                "description": "Start Implementation Process",
+                "operationId": "Start-Implementation-Process",
+                "parameters": [
+                    {
+                        "name": "isLoggerTrue",
+                        "in": "query",
+                        "schema": {
+                            "enum": [
+                                "false",
+                                "true"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/AcceptedTerm/AddProcess": {
+            "post": {
+                "summary": "Accepted Term Tasks",
+                "description": "Accepted Term Tasks",
+                "operationId": "Accepted-Term-Tasks",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/HsbdcipInvoice/AddInvoice": {
+            "post": {
+                "summary": "Add Invoice",
+                "operationId": "add-invoice",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/ProposalManagement/Main": {
+            "post": {
+                "summary": "Add PM PPM",
+                "operationId": "pm-main-flow",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/ProposalManagement/MultiIdentifier": {
+            "post": {
+                "summary": "PM Multi-Identifier",
+                "operationId": "pm-multi-identifier-flow",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/ProposalManagement/Standalone": {
+            "post": {
+                "summary": "PM Standalone",
+                "operationId": "pm-standalone-flow",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/ProposalManagement/PPMTasks": {
+            "post": {
+                "summary": "Add Task In PM",
+                "operationId": "add-task-in-pm",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/DecisionTree/IsValidStateForPhase": {
+            "post": {
+                "summary": "ICM-Decision Tree State Validation",
+                "operationId": "decision-tree-state-validation",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Tasks/CompleteWithDocument": {
+            "post": {
+                "summary": "Complete With Document",
+                "operationId": "complete-with-document",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/ProposalManagement/GenerateJSON": {
+            "post": {
+                "summary": "Generate JSON",
+                "operationId": "generate-json",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/ProposalManagement/MultiIdentifierProduct": {
+            "post": {
+                "summary": "PM Multi Identifier Product",
+                "operationId": "multi-identifier-product",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Initiation/PPMTasks": {
+            "post": {
+                "summary": "Add Initiation Task",
+                "operationId": "initiation-ppmtasks",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Initiation/GenerateJSON": {
+            "post": {
+                "summary": "Initiation GenerateJSON",
+                "operationId": "initiation-generatejson",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/AppianIntegration/CaptureOutcomeStatus": {
+            "post": {
+                "summary": "Fetch Capture Outcome Status",
+                "description": "Fetch Capture Outcome Status",
+                "operationId": "CaptureOutcomeStatus",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/AppianIntegration/ProjectStatus": {
+            "post": {
+                "summary": "Fetch Project Status",
+                "description": "Fetch Project Status",
+                "operationId": "fetch-project-status",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/AppianIntegration/PhaseLaunchDate": {
+            "post": {
+                "summary": "Fetch Phase Launch Date",
+                "description": "Fetch Phase Launch Date",
+                "operationId": "fetch-phase-launch-date",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Trigger/AdditionalDataFeedFlow": {
+            "post": {
+                "summary": "Additional DataFeed Flow",
+                "description": "Additional DataFeed Flow",
+                "operationId": "additional-datafeed-flow",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/MeasureAndMonitor/AddTasks": {
+            "post": {
+                "summary": "Add Measure And Monitor Task",
+                "operationId": "add-measure-and-monitor-task",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/MeasureAndMonitor/GenerateJSON": {
+            "post": {
+                "summary": "Measure And Monitor Generate json",
+                "operationId": "measure-and-monitor-generate-json",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/HsbdcipInvoice/FillOrderToInvoice": {
+            "post": {
+                "summary": "Fill Order To Invoice Tab",
+                "operationId": "fill-order-to-invoice-tab",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/MeasureAndMonitor/MNMCompleteInProcesStatus": {
+            "post": {
+                "summary": "M&M Complete In Process Status",
+                "operationId": "complete-in-process-status",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/MeasureAndMonitor/MMCompleteClosed": {
+            "post": {
+                "summary": "Measure and Monitor Complete status",
+                "operationId": "measure-and-monitor-complete-inprocess",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/MeasureAndMonitor/MMCancelTasks": {
+            "post": {
+                "summary": "Measure and Monitor Cancel Tasks",
+                "operationId": "measure-and-monitor-cancel-tasks",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/AppianIntegration/UpdateLastTaskProcess": {
+            "post": {
+                "summary": "Update Last Tasks Process",
+                "operationId": "update-last-tasks-process",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Pricing/ObtainQuoteDetails": {
+            "get": {
+                "summary": "Get Quote And Related Entity Payload",
+                "operationId": "get-quote-and-related-entity-payload",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Pricing/ObtainActiveQuotes": {
+            "get": {
+                "summary": "Obtain Active Quotes Payload",
+                "description": "Get Pricing Active Quotes Payload",
+                "operationId": "obtain-active-quotes-payload",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Pricing/PublishPrice": {
+            "post": {
+                "summary": "Publish Pricing Data ",
+                "operationId": "publish-pricing-data",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/SP/MoveFileAndMetaData": {
+            "post": {
+                "summary": "Move Share Point File And Data",
+                "operationId": "move-share-point-file-and-data",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Trigger/GetTreatyList": {
+            "get": {
+                "summary": "Fetch Treaty number List",
+                "operationId": "fetch-treaty-number-list",
+                "parameters": [
+                    {
+                        "name": "datafeedDeatilsId",
+                        "in": "query",
+                        "schema": {
+                            "enum": [
+                                "string"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Trigger/ProjectTeam": {
+            "get": {
+                "summary": "Fetch Project Team Users Name",
+                "operationId": "fetch-project-team-users-name",
+                "parameters": [
+                    {
+                        "name": "ProjectGuid",
+                        "in": "query",
+                        "description": "use custom project guid ",
+                        "schema": {
+                            "enum": [
+                                "89d35912-031d-eb11-a813-000d3a34b2bb"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/MeasureAndMonitor/MMInvoiceConsolidation": {
+            "post": {
+                "summary": "Measure And Monitor Invoice Consolidation",
+                "operationId": "measure-and-monitor-invoice-consolidation",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/MeasureAndMonitor/AddRequest": {
+            "post": {
+                "summary": "Trigger Measure And Monitor Project",
+                "operationId": "trigger-measure-and-monitor-project",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Ocp-Apim-Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ]
+}

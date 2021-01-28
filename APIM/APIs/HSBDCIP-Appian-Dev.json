@@ -1,0 +1,381 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "HSB-DCIP-Appian-DEV",
+        "description": "",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "https://hsbapidev.azure-api.net/ProcessAPI-Dev"
+        }
+    ],
+    "paths": {
+        "/1OOSkA/ProposalPhase": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "StartProposal",
+                "operationId": "startproposal",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/k5d-Tg/MultiIdentifier-Deprecated": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "StartStandAloneTasks-Deprecated ",
+                "description": "Deprecated",
+                "operationId": "startstandalonetasks",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/sbjDkQ/ProjectStatus": {
+            "post": {
+                "summary": "Project Status Update",
+                "operationId": "Project-Status-Update",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/IYdY2A/ProductVersion": {
+            "post": {
+                "summary": "Product Version",
+                "operationId": "Product-Version",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Xoy4bA/ProjectName": {
+            "post": {
+                "summary": "Project Name Update",
+                "operationId": "Project-Name-Update",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/duBULQ/ClientProducts": {
+            "post": {
+                "summary": "Client Products",
+                "operationId": "Client-Products",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/hL27ZA/ProjectTeamRoles": {
+            "post": {
+                "summary": "Project Team Roles",
+                "operationId": "Project-Team-Roles",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/wgG3Xg/CaptureTaskOutput": {
+            "post": {
+                "summary": "Capture Task Outcome",
+                "operationId": "capturetaskoutcome",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/IDSfYw/IMInitiationPhase": {
+            "post": {
+                "summary": "IM Initiation Phase",
+                "operationId": "im-initiation-phase",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/3bq5g/AccountName": {
+            "post": {
+                "summary": "Add Account",
+                "operationId": "add-account",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/ei9U0w/IMAccountName/": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "IMAccountName",
+                "operationId": "imaccountname",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "application/json",
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/VuL8ww/IMProjectStatus/": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "IMProjectStatus",
+                "operationId": "improjectstatus",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/Oh-MjA/IMProjectName": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "IMProjectName",
+                "operationId": "improjectname",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/vxAAHQ/IMClientProducts": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "IMClientProducts",
+                "operationId": "imclientproducts",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/v38teA/IMProjectTeamRoles": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "IMProjectTeamRoles",
+                "operationId": "improjectteamroles",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/oXVCpw/IMCaptureTaskOutput": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "IMCaptureTaskOutput",
+                "operationId": "imcapturetaskoutput",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/oXVCpw/IMProductVersion": {
+            "post": {
+                "tags": [
+                    "DCIP"
+                ],
+                "summary": "IMProductVersion",
+                "operationId": "improductversion",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/oT1EoA/CancelTaskStatus": {
+            "post": {
+                "summary": "Cancel Task Status",
+                "operationId": "cancel-task-status",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/s7WBMQ/IMInitiationValid": {
+            "post": {
+                "summary": "IMInitiationValid",
+                "operationId": "IMInitiationValid",
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "enum": [
+                                "application/json"
+                            ],
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/C7k4YQ/HelloWorld": {
+            "get": {
+                "summary": "Hello World",
+                "operationId": "hello-world",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/1xVCqw/BindingApprovers": {
+            "post": {
+                "summary": "BindingApprovers",
+                "operationId": "bindingapprovers",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/JGlqZQ/ReviewApprovers": {
+            "post": {
+                "summary": "ReviewApprovers",
+                "operationId": "reviewapprovers",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/CwA_Tw/MeasureAndMonitorPhase": {
+            "post": {
+                "summary": "Measure and Monitor Phase",
+                "operationId": "measure-and-monitor-phase",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/nTHooA/MMOpenTasks": {
+            "post": {
+                "summary": "MMCancelOpenTasks",
+                "operationId": "mmcancelopentasks",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Ocp-Apim-Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ]
+}
